@@ -2,5 +2,8 @@
 <p><%= image_tag("searching.gif", :alt => "Searching", :class =>
   "round") %></p>
 <p>
-<div><span id="status">no</span>% complete</div>
+  <div class="ProgressBar">
+    <div class="ProgressBarText"><span id="status">no</span>% complete</div>
+    <div class="ProgressBarFill" style="width: 0%;"></div>
+  </div>
 </p>

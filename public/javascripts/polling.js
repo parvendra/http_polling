@@ -1,7 +1,9 @@
 $(document).ready(function(){
-    var division =  $('#status');
+    var division = $('#status');
+    var progress_bar =  $('.ProgressBar');
     function update_status(){
-        division.load('/polling');     
+        division.load('/polling'); 
+        $('.ProgressBarFill').animate({width : division.html()+'%' }, 'normal');
         if(division.html() == "100"){
             window.location = '/result'
         }
