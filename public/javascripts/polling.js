@@ -3,9 +3,9 @@ $(document).ready(function(){
     var progress_bar =  $('.ProgressBar');
     function update_status(){
         division.load('/polling'); 
-        $('.ProgressBarFill').animate({width : division.html()+'%' }, 'normal');
+        $('.ProgressBarFill').animate({width : division.html()+'%' }, 'fast');
         if(division.html() == "100"){
-            window.location = '/result'
+            window.location = '/result';
         }
         setTimeout(update_status, 1000)
     }
