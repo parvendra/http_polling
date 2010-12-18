@@ -238,3 +238,8 @@ form.new_micropost textarea {
   height: 4em;
   margin-bottom: 0;
 }
+div.status-bar {
+   height: 20px;
+   width: 60%;
+   border: 1px;
+}
