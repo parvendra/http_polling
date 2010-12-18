@@ -1,4 +1,9 @@
 HttpPolling::Application.routes.draw do
+
+  match '/wait', :to => 'pages#waiting'
+  match '/result', :to => 'pages#result'
+  
+  root :to => 'pages#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
