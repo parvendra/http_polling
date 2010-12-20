@@ -1,5 +1,5 @@
 class Search
-  attr_reader :status
+  attr_accessor :status
   def initialize
     @status = 0
   end
@@ -7,7 +7,7 @@ class Search
     Thread.new do
       while @status < 100
         sleep 1
-        @status += 5
+        @status += 2
       end
     end
   end
